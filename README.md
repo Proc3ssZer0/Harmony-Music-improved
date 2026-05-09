@@ -1,83 +1,43 @@
-<div align="center">
+# 🧊 Glazed
 
-# ❗**This repository is longer maintained by me btw.**
+[English](#english) | [Русский](#russian)
 
-</div>
+---
 
-<img src="https://github.com/anandnet/Harmony-Music/blob/main/cover.png" width="1200" >
+<a name="english"></a>
+## English
 
-# Harmony Music
-A cross platform app for music streaming made with Flutter(Android, Windows, linux).
+**Glazed** is a high-performance, cross-platform music player focused on extreme fluidity, macOS-inspired aesthetics, and a "debloated" core. Built with Flutter, it’s designed to provide a seamless experience across all desktop and mobile platforms.
 
-# Features
-* Ability to play song from Ytube/Ytube Music.
-* Song cache while playing
-* Radio feature support
-* Background music
-* Playlist creation & bookmark support
-* Artist & Album bookmark support
-* Import song,Playlist,Album,Artist via sharing from Ytube/Ytube Music.
-* Streaming quality control
-* Song downloading support
-* Language support
-* Skip silence
-* Dynamic Theme
-* Flexibility to switch between Bottom & Side Nav bar
-* Equalizer support
-* Android Auto support
-* Synced & Plain Lyrics support
-* Sleep Timer
-* No Advertisment
-* No Login required
-* Piped playlist integration
+### ✨ Features
+* **macOS Aesthetic:** Clean, "glassmorphism" UI inspired by modern desktop designs.
+* **High Performance:** Highly optimized rendering for smooth animations and low latency.
+* **Cross-Platform:** Full support for Android, Linux, and Windows.
+* **Debloated:** Zero telemetry, zero unnecessary background services.
+* **Open Source:** Transparent development with a focus on privacy and speed.
+
+### 🛠 Tech Stack
+* **Framework:** Flutter (Dart)
+* **Audio Engine:** High-fidelity stream processing.
+* **Platform Specifics:** Native optimizations for Desktop and Android.
 
 
-# Download
-* Pleass choose one source for android apk. you won't be able to update from cross build apk source.
+---
 
-<a href="https://github.com/anandnet/Harmony-Music/releases/latest"><img src ="https://github.com/anandnet/Harmony-Music/blob/main/don_github.png" width = "250"></a> <a href= "https://f-droid.org/packages/com.anandnet.harmonymusic"><img src = "https://github.com/anandnet/Harmony-Music/blob/main/down_fdroid.png" width = '250'></a></a> 
+<a name="russian"></a>
+## Русский
 
-# Translation
-<a href="https://hosted.weblate.org/engage/harmony-music/">
-<img src="https://hosted.weblate.org/widget/harmony-music/project-translations/multi-auto.svg" alt="Translation status" />
-</a>
+**Glazed** — это высокопроизводительный кроссплатформенный музыкальный плеер. Основной упор сделан на экстремальную плавность интерфейса, эстетику в стиле macOS и «чистое» ядро без лишних фоновых процессов.
 
-You can also help us in translation, click status image or <a href="https://hosted.weblate.org/projects/harmony-music/project-translations/"> here </a> to go to Weblate.
+### ✨ Особенности
+* **Эстетика macOS:** Лаконичный интерфейс в стиле "glassmorphism", вдохновленный современными десктопными ОС.
+* **Высокая производительность:** Глубокая оптимизация рендеринга для плавных анимаций и мгновенного отклика.
+* **Кроссплатформенность:** Полноценная поддержка Android, Linux и Windows.
+* **Debloated:** Никакой телеметрии и скрытых фоновых служб.
+* **Open Source:** Прозрачная разработка с приоритетом на приватность и скорость.
 
-# Troubleshoot
-* if you are facing Notification control issue or music playback stopped by system optimization, please enable ignore battery optimization option from settings
-
-# License
-```
-Harmony Music is a free software licensed under GPL v3.0 with following condition.
-
-- Copied/Modified version of this software can not be used for 'non-free' and profit purposes.
-- You can not publish copied/modified version of this app on closed source app repository
-  like PlayStore/AppStore.
-
-```
-
-
-# Disclaimer
-```
-This project has been created while learning & learning is the main intention.
-This project is not sponsored or affiliated with, funded, authorized, endorsed by any content provider.
-Any Song, content, trademark used in this app are intellectual property of their respective owners.
-Harmony music is not responsible for any infringement of copyright or other intellectual property rights that may result
-from the use of the songs and other content available through this app.
-
-This Software is released "as-is", without any warranty, responsibility or liability.
-In no event shall the Author of this Software be liable for any special, consequential,
-incidental or indirect damages whatsoever (including, without limitation, any 
-other pecuniary loss) arising out of the use of inability to use this product, even if
-Author of this Sotware is aware of the possibility of such damages and known defect.
-```
-
-# Learning References & Credits
-<a href = 'https://docs.flutter.dev/'>Flutter documentation</a> - a best guide to learn cross platform Ui/app developemnt<br/>
-<a href = 'https://suragch.medium.com/'>Suragch</a>'s Article related to Just audio & state management,architectural style<br/>
-<a href = 'https://github.com/sigma67'>sigma67</a>'s unofficial ytmusic api project<br/>
-App UI inspired by <a href = 'https://github.com/vfsfitvnm'>vfsfitvnm</a>'s ViMusic<br/>
-Synced lyrics provided by <a href = 'https://lrclib.net' >LRCLIB</a> <br/>
-<a href = 'https://piped.video' >Piped</a> for playlists.
+### 🛠 Стек технологий
+* **Фреймворк:** Flutter (Dart)
+* **Аудио-движок:** Высококачественная обработка потоков.
+* **Оптимизация:** Нативные улучшения для каждой поддерживаемой платформы.
 
