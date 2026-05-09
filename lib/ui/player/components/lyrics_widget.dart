@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ВАЖНО: Импорт для версии 2.0.4+6 именно такой
 import 'package:flutter_lyric/lyrics_reader.dart';
 import 'package:get/get.dart';
 
@@ -42,14 +43,15 @@ class LyricsWidget extends StatelessWidget {
                   ),
                 )
               : IgnorePointer(
+                  // Здесь СНОВА используем LyricsReader (с 's'), так как мы откатили версию
                   child: LyricsReader(
                     padding: const EdgeInsets.only(left: 5, right: 5),
                     lyricUi: playerController.lyricUi,
                     position: playerController
                         .progressBarStatus.value.current.inMilliseconds,
+                    // Используем LyricsModelBuilder (с 's')
                     model: LyricsModelBuilder.create()
-                        .bindLyricToMain(
-                            playerController.lyrics['synced'].toString())
+                        .bindLyricToMain(playerController.lyrics['synced'].toString())
                         .getModel(),
                     emptyBuilder: () => Center(
                       child: Text(

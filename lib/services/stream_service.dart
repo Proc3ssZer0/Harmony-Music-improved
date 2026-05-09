@@ -23,8 +23,6 @@ class StreamProvider {
                   audioCodec:
                       e.audioCodec.contains('mp') ? Codec.mp4a : Codec.opus,
                   bitrate: e.bitrate.bitsPerSecond,
-                  duration: e.duration ?? 0,
-                  loudnessDb: e.loudnessDb,
                   url: e.url.toString(),
                   size: e.size.totalBytes))
               .toList());
@@ -37,7 +35,7 @@ class StreamProvider {
       } else if (e is VideoUnplayableException) {
         return StreamProvider(
           playable: false,
-          statusMSG: e.reason ?? "Song is unplayable",
+          statusMSG: e.message ?? "Song is unplayable",
         );
       } else if (e is VideoRequiresPurchaseException) {
         return StreamProvider(
@@ -93,16 +91,12 @@ class Audio {
   final int itag;
   final Codec audioCodec;
   final int bitrate;
-  final int duration;
   final int size;
-  final double loudnessDb;
   final String url;
   Audio(
       {required this.itag,
       required this.audioCodec,
       required this.bitrate,
-      required this.duration,
-      required this.loudnessDb,
       required this.url,
       required this.size});
 
@@ -110,9 +104,7 @@ class Audio {
         "itag": itag,
         "audioCodec": audioCodec.toString(),
         "bitrate": bitrate,
-        "loudnessDb": loudnessDb,
         "url": url,
-        "approxDurationMs": duration,
         "size": size
       };
 
@@ -121,9 +113,7 @@ class Audio {
           ? Codec.mp4a
           : Codec.opus,
       itag: json['itag'],
-      duration: json["approxDurationMs"] ?? 0,
       bitrate: json["bitrate"] ?? 0,
-      loudnessDb: (json['loudnessDb'])?.toDouble() ?? 0.0,
       url: json['url'],
       size: json["size"] ?? 0);
 }

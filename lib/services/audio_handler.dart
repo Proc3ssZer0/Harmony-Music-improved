@@ -485,9 +485,6 @@ class MyAudioHandler extends BaseAudioHandler with GetxServiceMixin {
         await _playList.add(_createAudioSource(currentSong));
 
         isSongLoading = false;
-        if (loudnessNormalizationEnabled && GetPlatform.isAndroid) {
-          _normalizeVolume(streamInfo.audio!.loudnessDb);
-        }
 
         if (restoreSession) {
           if (!GetPlatform.isDesktop) {
@@ -562,12 +559,6 @@ class MyAudioHandler extends BaseAudioHandler with GetxServiceMixin {
 
         await _playList.add(_createAudioSource(currMed));
         isSongLoading = false;
-
-        // Normalize audio
-        if (loudnessNormalizationEnabled && GetPlatform.isAndroid) {
-          _normalizeVolume(streamInfo.audio!.loudnessDb);
-        }
-
         await _player.play();
         break;
 
@@ -790,8 +781,6 @@ class MyAudioHandler extends BaseAudioHandler with GetxServiceMixin {
         cacheAudioPlaceholder = Audio(
             audioCodec: Codec.mp4a,
             bitrate: 0,
-            loudnessDb: 0,
-            duration: 0,
             size: 0,
             url: "file://$_cacheDir/cachedSongs/$songId.mp3",
             itag: 0);
@@ -814,8 +803,6 @@ class MyAudioHandler extends BaseAudioHandler with GetxServiceMixin {
             itag: 140,
             audioCodec: Codec.mp4a,
             bitrate: 0,
-            duration: 0,
-            loudnessDb: 0,
             url: path,
             size: 0);
       }
