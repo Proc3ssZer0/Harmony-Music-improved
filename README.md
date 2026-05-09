@@ -1,4 +1,4 @@
-# 🧊 Glazed
+# 🧊 Glazed music
 
 [English](#english) | [Русский](#russian)
 
@@ -7,7 +7,7 @@
 <a name="english"></a>
 ## English
 
-**Glazed** is a high-performance, cross-platform music player focused on extreme fluidity, macOS-inspired aesthetics, and a "debloated" core. Built with Flutter, it’s designed to provide a seamless experience across all desktop and mobile platforms.
+**Glazed music** is a high-performance, cross-platform music player focused on extreme fluidity, macOS-inspired aesthetics, and a "debloated" core. Built with Flutter, it’s designed to provide a seamless experience across all desktop and mobile platforms.
 
 ### ✨ Features
 * **macOS Aesthetic:** Clean, "glassmorphism" UI inspired by modern desktop designs.
@@ -27,7 +27,7 @@
 <a name="russian"></a>
 ## Русский
 
-**Glazed** — это высокопроизводительный кроссплатформенный музыкальный плеер. Основной упор сделан на экстремальную плавность интерфейса, эстетику в стиле macOS и «чистое» ядро без лишних фоновых процессов.
+**Glazed music** — это высокопроизводительный кроссплатформенный музыкальный плеер. Основной упор сделан на экстремальную плавность интерфейса, эстетику в стиле macOS и «чистое» ядро без лишних фоновых процессов.
 
 ### ✨ Особенности
 * **Эстетика macOS:** Лаконичный интерфейс в стиле "glassmorphism", вдохновленный современными десктопными ОС.
